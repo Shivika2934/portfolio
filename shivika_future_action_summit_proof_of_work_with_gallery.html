@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Shivika Mittal | Technology, Community & SDGs</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f6faf8;
+            color: #183028;
+            line-height: 1.65
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: #173f35;
+            color: #fff;
+            padding: 14px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px
+        }
+
+        header {
+            background: linear-gradient(135deg, #173f35, #286b59);
+            color: #fff;
+            padding: 70px 8%
+        }
+
+        header h1 {
+            font-size: 44px;
+            margin: 0 0 12px
+        }
+
+        header p {
+            max-width: 820px;
+            font-size: 19px;
+            margin: 0
+        }
+
+        main {
+            max-width: 1120px;
+            margin: auto;
+            padding: 48px 24px 80px
+        }
+
+        section {
+            margin-bottom: 58px
+        }
+
+        h2 {
+            color: #173f35;
+            font-size: 30px
+        }
+
+        .intro,
+        .card,
+        .project {
+            background: #fff;
+            border: 1px solid #dce8e2;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 5px 20px #0000000b
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+            gap: 18px
+        }
+
+        h3 {
+            color: #1f6655;
+            margin-top: 0
+        }
+
+        .sdg {
+            display: inline-block;
+            background: #e5f2ed;
+            color: #195846;
+            padding: 5px 9px;
+            border-radius: 18px;
+            font-size: 12px;
+            margin: 4px 3px 0 0;
+            font-weight: bold
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 22px 0
+        }
+
+        .tab {
+            border: 1px solid #b9d5ca;
+            background: #fff;
+            color: #173f35;
+            padding: 10px 17px;
+            border-radius: 24px;
+            cursor: pointer;
+            font-weight: bold
+        }
+
+        .tab.active {
+            background: #173f35;
+            color: #fff
+        }
+
+        .tabcontent {
+            display: none
+        }
+
+        .tabcontent.active {
+            display: block
+        }
+
+        .project {
+            margin-bottom: 18px
+        }
+
+        .tag {
+            float: right;
+            background: #eef5f2;
+            padding: 5px 9px;
+            border-radius: 12px;
+            font-size: 12px
+        }
+
+        .highlight {
+            border-left: 5px solid #2f806c;
+            padding: 18px 22px;
+            background: #edf6f2;
+            border-radius: 8px
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 18px
+        }
+
+        .photo {
+            background: #fff;
+            border: 1px solid #dce8e2;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px #0000000a
+        }
+
+        .photo img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            display: block
+        }
+
+        .photo .caption {
+            padding: 13px;
+            font-size: 14px
+        }
+
+        .placeholder {
+            height: 190px;
+            background: #eef5f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            color: #527368;
+            font-weight: bold
+        }
+
+        .photo-note {
+            font-size: 13px;
+            color: #527368;
+            margin-top: 10px
+        }
+
+        .links a {
+            color: #1d6957
+        }
+
+        footer {
+            background: #173f35;
+            color: #fff;
+            text-align: center;
+            padding: 28px
+        }
+
+        .small {
+            font-size: 13px;
+            opacity: .8
+        }
+
+        @media(max-width:700px) {
+            header h1 {
+                font-size: 34px
+            }
+
+            nav {
+                display: block
+            }
+
+            nav a {
+                margin: 0 12px 0 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav><strong>Shivika Mittal</strong>
+        <div>
+            <a href="#about">About</a><a href="#sdg">SDG Initiatives</a><a href="#projects">Projects</a><a
+                href="#reflection">Reflection</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Technology, Community & Sustainable Development</h1>
+        <p>Proof of work combining my community initiatives through Kind Beings NGO with selected AI, data and
+            smart-city projects connected to the Sustainable Development Goals.</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="intro">
+                <h2>My Journey</h2>
+                <p>I am a Computer Science student specializing in Artificial Intelligence and Machine Learning. My
+                    journey has developed along two connected paths: using technology to solve practical problems and
+                    participating in community initiatives that address everyday challenges.</p>
+                <p>My work with <strong>Kind Beings NGO</strong> introduced me to grassroots community action, while my
+                    academic and research projects showed me how technology can make solutions more accessible and
+                    scalable.</p>
+            </div>
+        </section>
+
+        <section id="sdg">
+            <h2>Community Action — Kind Beings NGO</h2>
+            <p>Through Kind Beings NGO, I participated in initiatives focused on education, environmental awareness,
+                cleanliness and responsible citizenship.</p>
+
+            <div class="grid">
+
+                <div class="card">
+                    <h3>Education for Underprivileged Students</h3>
+                    <p>
+                        Supported initiatives aimed at helping students from underprivileged
+                        backgrounds access educational opportunities and resources.
+                    </p>
+                    <span class="sdg">SDG 4 • Quality Education</span>
+                    <span class="sdg">SDG 10 • Reduced Inequalities</span>
+                </div>
+
+                <div class="card">
+                    <h3>Cleanliness Drives</h3>
+                    <p>
+                        Participated in community cleanliness activities promoting responsibility
+                        for shared public spaces and a cleaner environment.
+                    </p>
+                    <span class="sdg">SDG 11 • Sustainable Cities</span>
+                    <span class="sdg">SDG 12 • Responsible Consumption</span>
+                </div>
+
+                <div class="card">
+                    <h3>Tree Plantation</h3>
+                    <p>
+                        Contributed to tree plantation activities and environmental awareness,
+                        encouraging the community to care for green spaces.
+                    </p>
+                    <span class="sdg">SDG 13 • Climate Action</span>
+                    <span class="sdg">SDG 15 • Life on Land</span>
+                </div>
+
+                <div class="card">
+                    <h3>Stationery Distribution</h3>
+                    <p>
+                        Participated in stationery distribution initiatives to provide basic
+                        educational resources and support students in their learning.
+                    </p>
+                    <span class="sdg">SDG 4 • Quality Education</span>
+                    <span class="sdg">SDG 10 • Reduced Inequalities</span>
+                </div>
+
+                <div class="card">
+                    <h3>Traffic Rules Awareness</h3>
+                    <p>
+                        Participated in awareness activities encouraging safer, more responsible
+                        road behaviour and greater civic awareness.
+                    </p>
+                    <span class="sdg">SDG 11 • Sustainable Cities</span>
+                </div>
+
+                <div class="card">
+                    <h3>Stray Dogs Feeding</h3>
+                    <p>
+                        Participated in feeding initiatives for stray dogs, promoting compassion,
+                        responsible community participation and humane coexistence with animals.
+                    </p>
+                    <span class="sdg">SDG 11 • Sustainable Cities</span>
+                    <span class="sdg">SDG 15 • Life on Land</span>
+                </div>
+
+                <div class="card">
+                    <h3>Water Conservation Awareness</h3>
+                    <p>
+                        Helped teach students about the importance of conserving water and
+                        encouraged responsible habits for using this essential resource.
+                    </p>
+                    <span class="sdg">SDG 6 • Clean Water & Sanitation</span>
+                    <span class="sdg">SDG 12 • Responsible Consumption</span>
+                </div>
+
+            </div>
+
+            <h2 style="margin-top:42px">Community Impact Gallery</h2>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="cleanliness.png" alt="Kind Beings cleanliness drive"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+
+                    <div class="caption"><strong>Cleanliness Drive</strong><br>Community cleanliness and civic
+                        responsibility.</div>
+                </div>
+                <div class="photo">
+                    <img src="tree.png" alt="Kind Beings tree plantation"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+
+                    <div class="caption"><strong>Tree Plantation</strong><br>Environmental action and awareness.</div>
+                </div>
+
+                <div class="photo">
+                    <img src="education.png" alt="Education initiative"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+
+                    <div class="caption"><strong>Education Initiative</strong><br>Supporting educational access.</div>
+                </div>
+                <div class="photo">
+                    <img src="stationary.png" alt="Stationery distribution"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+
+                    <div class="caption"><strong>Stationery Distribution</strong><br>Providing educational resources.
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="traffic.png" alt="Traffic rules awareness"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+
+                    <div class="caption"><strong>Traffic Rules Awareness</strong><br>Promoting responsible road
+                        behaviour.</div>
+                </div>
+                <div class="photo">
+                    <img src="stray_dogs.png" alt="Stray dogs feeding initiative"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+
+                    <div class="caption">
+                        <strong>Stray Dogs Feeding</strong><br>
+                        Promoting compassion and responsible care for animals in the community.
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="water.png" alt="Teaching students about water conservation"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+
+
+
+                    <div class="caption">
+                        <strong>Water Conservation Awareness</strong><br>
+                        Teaching students about responsible water use and the importance of conserving this essential
+                        resource.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Technology Projects & SDG Connections</h2>
+
+            <p>
+                My technical projects were not all originally created as SDG projects.
+                However, several of them connect naturally with themes such as accessible
+                public services, sustainable communities, safety, urban mobility,
+                responsible innovation and data-driven decision making.
+            </p>
+
+            <div class="project-grid">
+
+                <!-- Project 1 -->
+                <div class="project">
+                    <span class="tag">Hackathon • Smart City</span>
+
+                    <h3>Smart-City Public Washroom Locator</h3>
+
+                    <p>
+                        During a smart-city hackathon, my team explored a solution for
+                        helping people locate nearby public washrooms and encouraging
+                        community engagement. The experience showed me how digital
+                        information can improve access to essential public services.
+                    </p>
+
+                    <div class="project-sdgs">
+                        <span class="sdg">
+                            SDG 9 • Innovation & Infrastructure
+                        </span>
+                        <span class="sdg">
+                            SDG 11 • Sustainable Cities
+                        </span>
+                    </div>
+                </div>
+
+
+                <!-- Project 2 -->
+                <div class="project">
+                    <span class="tag">AI • Computer Vision</span>
+
+                    <h3>3D Scene Reconstruction for Smart Assistance</h3>
+
+                    <p>
+                        I combined YOLOv8, MiDaS monocular depth estimation and Open3D
+                        to reconstruct 3D environments from 2D images. A distance-based
+                        safety component explores spatial awareness for safer interaction
+                        with surroundings.
+                    </p>
+
+                    <p>
+                        The research was accepted at <strong>ICETSIS 2026</strong>
+                        and published in IEEE proceedings.
+                    </p>
+
+                    <div class="project-sdgs">
+                        <span class="sdg">
+                            SDG 9 • Innovation & Infrastructure
+                        </span>
+                        <span class="sdg">
+                            SDG 11 • Sustainable Cities
+                        </span>
+                    </div>
+                </div>
+
+
+                <!-- Project 3 -->
+                <div class="project">
+                    <span class="tag">Python • Flask • SQLite</span>
+
+                    <h3>Chicago Crime Data Dashboard</h3>
+
+                    <p>
+                        A data-driven web dashboard using Python, Flask and SQLite to
+                        explore and visualize crime data. Working with real-world data
+                        strengthened my understanding of how accessible information can
+                        help communities understand local issues.
+                    </p>
+
+                    <div class="project-sdgs">
+                        <span class="sdg">
+                            SDG 11 • Sustainable Cities
+                        </span>
+                        <span class="sdg">
+                            SDG 16 • Peace, Justice & Strong Institutions
+                        </span>
+                    </div>
+                </div>
+
+
+                <!-- Project 4 -->
+                <div class="project">
+                    <span class="tag">React • GeoJSON • Mapping</span>
+
+                    <h3>Delhi Transport Route Management</h3>
+
+                    <p>
+                        A geographic route visualization project using GeoJSON and
+                        React Leaflet to represent transport routes and explore urban
+                        mobility through digital mapping.
+                    </p>
+
+                    <div class="project-sdgs">
+                        <span class="sdg">
+                            SDG 9 • Innovation & Infrastructure
+                        </span>
+                        <span class="sdg">
+                            SDG 11 • Sustainable Cities
+                        </span>
+                    </div>
+                </div>
+
+
+                <!-- Project 5 -->
+                <div class="project">
+                    <span class="tag">AI • Research • GNN</span>
+
+                    <h3>
+                        Generative Modeling of Protein–Ligand Trajectories
+                    </h3>
+
+                    <p>
+                        Research using graph neural diffusion networks for scalable
+                        generative modeling of protein–ligand trajectories. The work
+                        reflects my interest in applying advanced AI to scientific
+                        challenges.
+                    </p>
+
+                    <p>
+                        The paper was accepted at <strong>ICIPTM-2026</strong>.
+                    </p>
+
+                    <div class="project-sdgs">
+                        <span class="sdg">
+                            SDG 9 • Innovation & Infrastructure
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="reflection">
+            <h2>What I Learned</h2>
+            <div class="highlight">
+                <p><strong>Creating a solution is only the beginning; creating sustained impact requires people,
+                        participation, adaptability and long-term thinking.</strong></p>
+                <p>Community initiatives taught me that limited resources, awareness and sustained participation can
+                    affect impact. Technology projects taught me that technical performance alone does not guarantee
+                    that a solution will be useful to people.</p>
+                <p>These experiences have shaped my goal of combining technical capability with empathy and community
+                    participation, and of thinking about how ideas can move from individual projects into practical,
+                    sustainable solutions.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>My SDG Focus</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>SDG 4</h3>
+                    <p>Quality Education — educational access and resources.</p>
+                </div>
+                <div class="card">
+                    <h3>SDG 9</h3>
+                    <p>Innovation & Infrastructure — AI, data and digital solutions.</p>
+                </div>
+                <div class="card">
+                    <h3>SDG 11</h3>
+                    <p>Sustainable Cities & Communities — smart-city, mobility, safety and awareness initiatives.</p>
+                </div>
+                <div class="card">
+                    <h3>SDG 13 & 15</h3>
+                    <p>Climate Action and Life on Land — environmental and tree-plantation activities.</p>
+                </div>
+                <div class="card">
+                    <h3>SDG 16</h3>
+                    <p>Peace, Justice & Strong Institutions — exploring community safety through data.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="links">
+            <h2>Further Work</h2>
+            <p>Technical portfolio: <a href="https://shivika-portfolio.netlify.app/"
+                    target="_blank">shivika-portfolio.netlify.app</a></p>
+            <p>3D Reconstruction GitHub: <a href="https://github.com/Shivika2934/3Dreconstruction"
+                    target="_blank">github.com/Shivika2934/3Dreconstruction</a></p>
+        </section>
+    </main>
+    <footer><strong>Shivika Mittal</strong>
+        <div class="small">Proof of Work • Community Action • Responsible Technology • Future Action Summit Australia
+            2026</div>
+    </footer>
+    <script>
+        function showTab(id, btn) { document.querySelectorAll('.tabcontent').forEach(x => x.classList.remove('active')); document.querySelectorAll('.tab').forEach(x => x.classList.remove('active')); document.getElementById(id).classList.add('active'); btn.classList.add('active') }
+    </script>
+</body>
+
+</html>
